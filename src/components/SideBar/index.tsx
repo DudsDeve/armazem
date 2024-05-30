@@ -27,7 +27,7 @@ const theme = {
 }
 
 
-    return(<>
+    return(
     <Container>
       <ContainerProfile>
 
@@ -72,5 +72,5 @@ const theme = {
 </ContainerProfile>
 
 <Button widthSize="90%" backgroundColor='#d30f06' hover='#fa1f0c' color='white' >Sair</Button>
-</Container></>)
+</Container>)
 }
