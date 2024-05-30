@@ -1,7 +1,7 @@
-import { Login } from "./pages/Login";
+import { Home } from "./pages/Home";
 import { GlobalStyle } from "./styles/global";
 
 export function App(){
-  return <><Login/>
+  return <><Home/>
   <GlobalStyle/></>
 }

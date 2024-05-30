@@ -9,7 +9,7 @@ interface InputProps {
     disabled?: boolean,
     id?: string,
   
-    $whidth?:string, //%
+    $width?:string, //%
     mask?:string,
     placeholder?:string
 
@@ -21,7 +21,7 @@ export function Inputt ({
         disabled,
         id,
         
-        $whidth ,
+        $width ,
        
         mask,
         placeholder, 
@@ -30,7 +30,7 @@ export function Inputt ({
 
     return <> 
     
-<NewInput suffix={suffix} maxLength={maxLength} variant={variant} disabled={disabled} id={id}  $width={$whidth} 
+<NewInput suffix={suffix} maxLength={maxLength} variant={variant} disabled={disabled} id={id}  $width={$width} 
  mask={mask} placeholder={placeholder}  />
  
  </>
