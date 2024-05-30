@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 
 type Props = {
-   width:boolean
+   $widthSize:string
    $backgroundColor: string
    $color: string 
    $hover: string
@@ -12,8 +12,8 @@ type Props = {
 export const NewButton = styled(Button)<Props>`
 
 
-${({  width, $backgroundColor, $color, $hover}) => css`
-    width: ${width ? '100%' : ''};
+${({  $widthSize, $backgroundColor, $color, $hover}) => css`
+    width: ${$widthSize};
     background-color: ${$backgroundColor};
     color: ${$color};
     &:hover {

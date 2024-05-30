@@ -4,7 +4,7 @@ import { ConfigProvider } from "antd";
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement>{
     children: ReactNode
-    width?: string
+    widthSize?: string
     backgroundColor?: string
     color?:string
     hover?:string
@@ -18,7 +18,7 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement>{
 
 
 }
-export function Button({children, ghost = false,width, danger,disabled,icon,iconPosition,loading, backgroundColor, color,hover} : Props) { 
+export function Button({children, ghost = false,widthSize, danger,disabled,icon,iconPosition,loading, backgroundColor, color,hover} : Props) { 
     return <> 
     <ConfigProvider 
      theme={{
@@ -31,7 +31,7 @@ export function Button({children, ghost = false,width, danger,disabled,icon,icon
             },
         },
       }}>
-    <NewButton  width={width} ghost={ghost}  danger={danger} disabled={disabled} icon={icon} iconPosition={iconPosition} loading={loading} $backgroundColor={backgroundColor} 
+    <NewButton  $widthSize={widthSize} ghost={ghost}  danger={danger} disabled={disabled} icon={icon} iconPosition={iconPosition} loading={loading} $backgroundColor={backgroundColor} 
     $color={color} $hover={hover}>{children}</NewButton>
     </ConfigProvider>
     </>

@@ -13,6 +13,8 @@ export const DefaultColors = {
         BLUE_200:'#219EBC',
         BLUE_300: '#012245',
 
+        BLUE_TESTAR: '#1F2A40'
+
 
 
         
