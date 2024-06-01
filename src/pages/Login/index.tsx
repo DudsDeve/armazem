@@ -7,8 +7,9 @@ import { EyeInvisibleOutlined, EyeTwoTone, UserOutlined } from "@ant-design/icon
 import {  Input} from "antd";
 import { Divider } from "../../components/Divider";
 import { Button } from "../../components/Button";
+import { DefaultColors } from "../../styles/colors";
 
-
+const { COLORS } = DefaultColors
 
 export function Login () {
  
@@ -21,7 +22,7 @@ export function Login () {
     <InputContainer>
     <Inputt  placeholder="E-mail"  suffix={<UserOutlined/>}/>
     <Input.Password placeholder='Senha' iconRender={(visible) => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}/>
-    <Button backgroundColor="#F4C118" width="15px" color="white" hover="#FFB703">Acessar</Button>
+    <Button backgroundColor={COLORS.ORANGE_LOGO} width="15px" color="white" hover="#FFB703">Acessar</Button>
    
     </InputContainer>
     

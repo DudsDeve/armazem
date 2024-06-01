@@ -1,10 +1,13 @@
 
 import { ChartBar, Package, TShirt, User } from '@phosphor-icons/react';
-import { Sidebar, Menu, MenuItem, SubMenu, sidebarClasses, menuClasses } from 'react-pro-sidebar';
-import { Container, ContainerProfile, Profile } from './styles';
+import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { Container, ContainerMenu, ContainerProfile, Link, Profile } from './styles';
 import logo from '../../assets/logo-complete.png'
 import profile from '../../assets/eu.jpg'
 import { Button } from '../Button';
+import { DefaultColors } from '../../styles/colors';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { PATHS } from '../../utils/paths';
 
 export function SideBar(){
 
@@ -13,7 +16,7 @@ const theme = {
 
       menuTheme:{
       backgroundColor:
-      '#012245',
+      '#1F2A40',
       color:'white'},
 
       menuItemTheme:{
@@ -26,40 +29,48 @@ const theme = {
 
 }
 
+const {COLORS} = DefaultColors
+
+const navigate = useNavigate()
+
+ function handleClick(){
+
+}
 
     return(
     <Container>
-      <ContainerProfile>
+     
+      <ContainerMenu>
 
-    <img className='logo' src={logo}/> 
+      <img className='logo' src={logo}/> 
+
+      <div className='profileContainer'>
+      <img className='profile'src={profile}/>
 
     <Profile>
-    <img className='profile'src={profile}/>
     <h2>Eduardo</h2>
     <b>Administrador</b>
     </Profile>
+    </div>
 
     <Sidebar width='250px'>
 
     <Menu rootStyles={theme.menuTheme} renderExpandIcon={({ open }) => <span>{open ? '-' : '+'}</span>}>
+      <Link to={PATHS.base}>
+      <MenuItem icon={<ChartBar size={24} color={COLORS.ORANGE_LOGO} weight="fill" />}
+       > Dashboard </MenuItem></Link>
 
-      <MenuItem icon={<ChartBar size={24} color="#f4c118" weight="fill" />}
-       > Dashboard </MenuItem>
-
-      <SubMenu  icon={<TShirt size={24} color="#f4c118" weight="fill" />
+      <SubMenu  icon={<TShirt size={24}  color={COLORS.ORANGE_LOGO} weight="fill" />
 }label='Produtos'> 
       <MenuItem  rootStyles={theme.menuItemTheme}> Todos os produtos </MenuItem>
       <MenuItem rootStyles={theme.menuItemTheme}>  Adicionar novo produto </MenuItem>
         </SubMenu>
-        <SubMenu icon={<Package size={24} color="#f4c118" weight="fill" />
-
-}label='Estoque'> 
-      <MenuItem rootStyles={theme.menuItemTheme}> Todos os produtos </MenuItem>
-      <MenuItem rootStyles={theme.menuItemTheme}> Adicionar novo produto </MenuItem>
-        </SubMenu>
+        <MenuItem icon={<Package size={24}  color={COLORS.ORANGE_LOGO} weight="fill" />}> 
+        Estoque</MenuItem>
+     
 
         <SubMenu icon={<User
-         size={24} color="#f4c118" weight="fill" />
+         size={24}  color={COLORS.ORANGE_LOGO} weight="fill" />
 
 }label='Vendedor'> 
       <MenuItem rootStyles={theme.menuItemTheme}> Todos os vendedores </MenuItem>
@@ -69,8 +80,8 @@ const theme = {
   </Menu>
   
 </Sidebar>
-</ContainerProfile>
+</ContainerMenu>
 
-<Button widthSize="90%" backgroundColor='#d30f06' hover='#fa1f0c' color='white' >Sair</Button>
+<NavLink to={PATHS.login}> Sair</NavLink>
 </Container>)
 }

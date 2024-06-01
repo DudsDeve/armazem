@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -9,37 +10,55 @@ justify-content: space-between;
 
 height: 100vh;
 width: 250px;
-background: linear-gradient(180deg, rgba(1,34,69,1) 66%, rgba(0,13,27,1) 100%);
+background-color: #1F2A40;
+//background: linear-gradient(180deg, rgba(1,34,69,1) 66%, rgba(0,13,27,1) 100%);
 .logo{
     width: 240px;
-    padding:20px 10px 0px 10px;
+    
     object-fit: contain;
 }
 
 button{
     margin-bottom: 10px;
 }
-
 `
-export const ContainerProfile = styled.div`
+export const ContainerMenu = styled.div`
 display: flex;
 flex-direction: column;
-gap:20px;
 
+gap:20px;
+padding-top:20px;
+
+.profileContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.profile{
+object-fit: cover;
+width: 50px;
+height:50px;
+border-radius: 10px;
+
+}
 `
 export const Profile = styled.div`
 display: flex;
 flex-direction: column;
-align-items:center;
+align-items:start;
+
 color: white;
 gap: 5px;
 
-
-img{
-clip-path: circle(50%);
-object-fit: cover;
-width: 150px;
-height:150px;
+h2{
+    font-size: 22px;
+}
+b{
+    font-size: 15px;
 }
 
+`
+export const Link = styled(NavLink)`
+text-decoration: none;
+color: white;
 `

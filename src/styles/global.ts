@@ -8,11 +8,11 @@ export const GlobalStyle = createGlobalStyle`
    a{
         color: black;
    }
+
+  
 }
 
 .glass {
-   
-
 /* From https://css.glass */
 background: rgba(1, 34, 69, 0.6);
 border-radius: 16px;
