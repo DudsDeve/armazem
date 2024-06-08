@@ -1,7 +1,9 @@
+import { Body } from './components/body'
 
 export function Home() {
-    return(
+  return (
     <>
-    
-     </>)
+      <Body />
+    </>
+  )
 }

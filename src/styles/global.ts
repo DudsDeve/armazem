@@ -1,16 +1,25 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
 
 *{ 
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box
+
    a{
         color: black;
    }
 
+  font-family: Montserrat;
   
+  .body{
+     padding: 20px;
+
 }
+
+}
+
+
 
 .glass {
 /* From https://css.glass */

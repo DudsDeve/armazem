@@ -1,19 +1,14 @@
-import { Input } from "antd";
-import styled, { css } from "styled-components";
+import { Input } from 'antd'
+import styled, { css } from 'styled-components'
 
-type InputProps = { 
-  $width:string
-  
-
+type InputProps = {
+  $width: string
+  $height: string
 }
 
 export const NewInput = styled(Input)<InputProps>`
-
-
-${({ $width  }) => css`
-    width: ${$width},
-   
-    
+  ${({ $width, $height }) => css`
+    width: ${$width};
+    height: ${$height};
   `}
- 
 `
