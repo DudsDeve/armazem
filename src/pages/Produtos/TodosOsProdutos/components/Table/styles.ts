@@ -5,6 +5,10 @@ export const Container = styled.div`
   width: 100%;
 
   overflow: hidden;
+
+  td {
+    border-bottom: 1px solid #ddd;
+  }
 `
 export const Table = styled.table`
   display: grid;
@@ -23,8 +27,6 @@ export const TableBody = styled.tr`
   grid-template-columns: 150px 1fr 200px 1fr 200px 100px;
   font-size: 20px;
   width: 100%;
-
-
 `
 
 export const Th = styled.th`
@@ -41,8 +43,6 @@ export const Td = styled.td`
   display: flex;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
 `
 export const TableIcon = styled.td`
   display: flex;

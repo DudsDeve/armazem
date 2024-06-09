@@ -24,18 +24,16 @@ export function Inputt({
   placeholder,
 }: InputProps) {
   return (
-    <>
-      <NewInput
-        suffix={suffix}
-        maxLength={maxLength}
-        variant={variant}
-        disabled={disabled}
-        id={id}
-        $height={height}
-        $width={width}
-        mask={mask}
-        placeholder={placeholder}
-      />
-    </>
+    <NewInput
+      suffix={suffix}
+      maxLength={maxLength}
+      variant={variant}
+      disabled={disabled}
+      id={id}
+      $height={height}
+      $width={width}
+      mask={mask}
+      placeholder={placeholder}
+    />
   )
 }

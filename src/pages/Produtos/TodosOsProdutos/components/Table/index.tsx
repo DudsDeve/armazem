@@ -11,7 +11,7 @@ import {
 import { PATHS } from '../../../../../utils/paths'
 import { Pencil, Trash } from '@phosphor-icons/react'
 import { Tag } from 'antd'
-import { Divider } from '../../../../../components/Divider'
+import { Modals } from '../../../../../components/Modal'
 
 export function Tables() {
   return (
@@ -45,9 +45,12 @@ export function Tables() {
               <Link to={PATHS.base}>
                 <Pencil size={30} />
               </Link>
-              <Link to={PATHS.base}>
+              <Modals
+                title="Remover {produto}"
+                content={`Tem certeza que deseja excluir {produto} permanentemente? Ao confirmar sua ação o produto não poderá ser restaurado.`}
+              >
                 <Trash size={30} color="red" />
-              </Link>
+              </Modals>
             </TableIcon>
           </TableBody>
         </Table>

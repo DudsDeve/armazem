@@ -7,11 +7,9 @@ interface Props {
 
 export function GraphTitle({ title, subtitle }: Props) {
   return (
-    <>
-      <Container>
-        <h1>{title}</h1>
-        <span>{subtitle}</span>
-      </Container>
-    </>
+    <Container>
+      <h1>{title}</h1>
+      <span>{subtitle}</span>
+    </Container>
   )
 }

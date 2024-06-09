@@ -5,7 +5,6 @@ import logo from '../../assets/logo-complete.png'
 import profile from '../../assets/eu.jpg'
 import { Button } from '../Button'
 import { DefaultColors } from '../../styles/colors'
-import { useNavigate } from 'react-router-dom'
 import { PATHS } from '../../utils/paths'
 
 export function SideBar() {

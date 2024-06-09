@@ -9,11 +9,9 @@ export function Header() {
   const restPath = pathname.substring(2).replace(/-/g, ' ')
 
   return (
-    <>
-      <Container className="body">
-        <Breadcrumbs />
-        <Title>{`${removePathBase}${restPath}`}</Title>
-      </Container>
-    </>
+    <Container className="body">
+      <Breadcrumbs />
+      <Title>{`${removePathBase}${restPath}`}</Title>
+    </Container>
   )
 }

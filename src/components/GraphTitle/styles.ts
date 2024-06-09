@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  
+
   span {
     margin-bottom: 20px;
   }

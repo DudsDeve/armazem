@@ -4,6 +4,7 @@ import { Container, SearchContainer } from './styles'
 import { DatePickers } from '../../../../../components/DatePicker'
 import { Divider } from '../../../../../components/Divider'
 import { Tree } from './components/Tree'
+import { Modals } from '../../../../../components/Modal'
 
 export function Header() {
   return (
@@ -12,7 +13,7 @@ export function Header() {
         <span>Filtrar produtos por:</span>
         <SearchContainer>
           <span>Data de entrada :</span>
-          <DatePickers height="40px" />
+          <DatePickers />
           <Divider type="vertical" />
           <span>Categoria:</span>
           <Tree whidthSize="30%" maxTagCount={4} maxTagTextLength={10} />

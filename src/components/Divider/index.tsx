@@ -7,10 +7,8 @@ interface DividerProps {
 }
 export function Divider({ orientation, children, type }: DividerProps) {
   return (
-    <>
-      <NewDivider orientation={orientation} type={type}>
-        {children}
-      </NewDivider>
-    </>
+    <NewDivider orientation={orientation} type={type}>
+      {children}
+    </NewDivider>
   )
 }
