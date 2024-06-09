@@ -4,7 +4,6 @@ import { Container, SearchContainer } from './styles'
 import { DatePickers } from '../../../../../components/DatePicker'
 import { Divider } from '../../../../../components/Divider'
 import { Tree } from './components/Tree'
-import { Modals } from '../../../../../components/Modal'
 
 export function Header() {
   return (

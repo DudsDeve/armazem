@@ -1,7 +1,7 @@
 import { ReactNode, useState } from 'react'
-import { Modal, Space } from 'antd'
-import { Buttons } from '../Button'
+import { Button, Modal, Space } from 'antd'
 import { DefaultColors } from '../../styles/colors'
+import { Buttons } from '../Button'
 
 interface Props {
   children: ReactNode
@@ -26,9 +26,9 @@ export function Modals({ children, title, content }: Props) {
   return (
     <>
       <Space>
-        <Buttons type="primary" onClick={showModal}>
+        <Button type="primary" onClick={showModal}>
           {children}
-        </Buttons>
+        </Button>
       </Space>
       <Modal
         centered
