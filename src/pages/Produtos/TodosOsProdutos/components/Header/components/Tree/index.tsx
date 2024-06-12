@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Tag, TreeSelect } from 'antd'
 
-const roupasData = [
+const data = [
   {
     value: 'Roupas',
     title: <Tag color="red"> Roupa</Tag>,
@@ -72,7 +72,7 @@ export function Tree({ whidthSize, maxTagCount, maxTagTextLength }: Props) {
       maxTagTextLength={maxTagTextLength}
       maxTagCount={maxTagCount}
       onChange={onChange}
-      treeData={roupasData}
+      treeData={data}
     />
   )
 }

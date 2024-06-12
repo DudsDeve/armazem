@@ -14,7 +14,7 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   danger?: boolean
   disabled?: boolean
   icon?: ReactNode
-  iconPosition?: 'star' | 'end'
+  iconPosition?: 'start' | 'end'
   loading?: boolean
 }
 // pegar todas as outras props
@@ -32,6 +32,7 @@ export function Buttons({
   hover,
   hoverText,
   type,
+  ...rest
 }: Props) {
   return (
     <ConfigProvider
@@ -58,6 +59,7 @@ export function Buttons({
         $hover={hover}
         $hoverText={hoverText}
         type={type}
+        {...rest}
       >
         {children}
       </NewButton>

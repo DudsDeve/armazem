@@ -9,7 +9,7 @@ import {
 import logo from '../../assets/logo-complete.png'
 import google from '../../assets/google.png'
 import facebook from '../../assets/facebook.png'
-import { Inputt } from '../../components/Input'
+import { Inputs } from '../../components/Inputs'
 import {
   EyeInvisibleOutlined,
   EyeTwoTone,
@@ -17,7 +17,7 @@ import {
 } from '@ant-design/icons'
 import { Input } from 'antd'
 import { Divider } from '../../components/Divider'
-import { Button } from '../../components/Button'
+import { Buttons } from '../../components/Buttons'
 import { DefaultColors } from '../../styles/colors'
 import { PATHS } from '../../utils/paths'
 
@@ -31,7 +31,7 @@ export function Login() {
           <LoginContainer>
             <img src={logo} />
             <InputContainer>
-              <Inputt placeholder="E-mail" suffix={<UserOutlined />} />
+              <Inputs placeholder="E-mail" suffix={<UserOutlined />} />
               <Input.Password
                 placeholder="Senha"
                 iconRender={(visible) =>
@@ -39,14 +39,14 @@ export function Login() {
                 }
               />
               <NavLink to={PATHS.base}>
-                <Button
+                <Buttons
                   backgroundColor={COLORS.ORANGE_LOGO}
                   width="100%"
                   color="white"
                   hover="#FFB703"
                 >
                   Acessar
-                </Button>
+                </Buttons>
               </NavLink>
             </InputContainer>
 

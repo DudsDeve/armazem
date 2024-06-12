@@ -10,6 +10,7 @@ export const DefaultColors = {
     BLUE_100: '#8ECAE6',
     BLUE_200: '#219EBC',
     BLUE_300: '#012245',
+    BLUE_400: '#151D2C',
 
     BLUE_TESTAR: '#1F2A40',
 
@@ -22,5 +23,5 @@ export const DefaultColors = {
     GREEN_300: '#108009',
 
     GRAY_100: '#ebebeb',
-  } as const
+  } as const,
 }

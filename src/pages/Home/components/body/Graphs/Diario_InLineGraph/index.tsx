@@ -11,6 +11,7 @@ import { DefaultColors } from '../../../../../../styles/colors'
 import { Container } from './styles'
 import { GraphTitle } from '../../../../../../components/GraphTitle'
 
+
 export function InLineGraph() {
   const data = [
     {
@@ -61,7 +62,7 @@ export function InLineGraph() {
 
   return (
     <>
-      <Container>
+      <Container >
         <GraphTitle
           title="Diário de vendas"
           subtitle="Vendas atuais x vendas no ano passado"

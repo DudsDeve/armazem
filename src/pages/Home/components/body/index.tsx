@@ -1,7 +1,7 @@
-import { BarCharts } from './Graphs/BarGraph'
+import { BarCharts } from './Graphs/Produtos_BarGraph'
 import { ClientesBarCharts } from './Graphs/Clientes_BarGraph'
 import { EstoqueBarCharts } from './Graphs/Estoque_BarGraph'
-import { InLineGraph } from './Graphs/InLineGraph'
+import { InLineGraph } from './Graphs/Diario_InLineGraph'
 import { VendedoresGraph } from './Graphs/Vendedores_PieGraph'
 import { Container } from './styles'
 

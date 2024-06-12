@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
 import { NewInput } from './styles'
 
 interface InputProps {
@@ -12,7 +12,7 @@ interface InputProps {
   mask?: string
   placeholder?: string
 }
-export function Inputt({
+export function Inputs({
   suffix,
   maxLength = 0,
   variant,

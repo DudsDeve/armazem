@@ -1,7 +1,7 @@
 import { ReactNode, useState } from 'react'
 import { Button, Modal, Space } from 'antd'
 import { DefaultColors } from '../../styles/colors'
-import { Buttons } from '../Button'
+import { Buttons } from '../Buttons'
 
 interface Props {
   children: ReactNode
